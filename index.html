@@ -73,9 +73,6 @@
     .logo-image:hover {
       transform: scale(1.05);
     }
-    .m-right {
-	    margin-right: 0.5rem;
-	  }
   </style>
 </head>
 <body class="min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-slate-950 text-white" style="font-family:'Inter','Segoe UI',sans-serif;">
@@ -84,15 +81,16 @@
 
   <!-- Navigation -->
   <nav id="topnav" class="fixed w-full z-50 transition-all duration-500">
-    <div class="flex justify-between max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center h-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
         <div class="flex items-center gap-3 group cursor-pointer">
-          <div class="flex items-center justify-center bg-gradient-to-br from-cyan-500/20 to-blue-500/20 border border-cyan-500/30 rounded-lg p-2 m-right">
+          <div class="flex items-center justify-center bg-gradient-to-br from-cyan-500/20 to-blue-500/20 border border-cyan-500/30 rounded-lg p-2">
             <img src="./logo.png" alt="DMAGS Logo" class="logo-image" onerror="this.onerror=null; this.outerHTML='<div class=logo-placeholder></div>';"/>
           </div>
           <div>
             <div class="text-xl font-bold text-gray-200">DMAGS</div>
-            <div class="text-xs text-gray-500 font-semibold">DRIVEN MINDS & GLOBAL SOLUTIONS</div>
+            <div class="text-xs text-gray-500 font-semibold">DRIVEN MINDS &</div>
+			<div class="text-xs text-gray-500 font-semibold">GLOBAL SOLUTIONS</div>
           </div>
         </div>
         <div id="nav-links" class="hidden md:flex space-x-1"></div>
@@ -103,7 +101,7 @@
   </nav>
 
   <!-- Hero Section -->
-  <section id="home" class="relative min-h-screen flex items-center justify-center pt-20">
+  <section id="home" class="relative min-h-screen flex items-center justify-center pt-28">
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
       <div class="inline-flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border border-cyan-500/20 rounded-full mb-8 animate-fade-in">
         <span>🚀</span>
@@ -442,7 +440,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
         <div class="flex items-center space-x-3 group cursor-pointer">
-          <div class="flex items-center justify-center bg-gradient-to-br from-cyan-500/20 to-blue-500/20 border border-cyan-500/30 rounded-lg p-2 m-right">
+          <div class="flex items-center justify-center bg-gradient-to-br from-cyan-500/20 to-blue-500/20 border border-cyan-500/30 rounded-lg p-2">
             <img src="./logo.png" alt="DMAGS Logo" class="logo-image" onerror="this.onerror=null; this.outerHTML='<div class=logo-placeholder></div>';"/>
           </div>
           <div>
