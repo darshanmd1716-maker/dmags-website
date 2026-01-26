@@ -589,6 +589,22 @@
       setTimeout(() => {
         document.getElementById('home').classList.add('animate-fade-in');
       }, 200);
+		// --- START OF BUTTON FIX ---
+      // This code makes "Get Started", "Learn More", and Footer links work
+      const scrollButtons = document.querySelectorAll('[data-scroll]');
+      
+      scrollButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.preventDefault(); // Stop default action
+          const targetId = btn.getAttribute('data-scroll');
+          const targetSection = document.getElementById(targetId);
+          
+          if (targetSection) {
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+      // --- END OF BUTTON FIX ---
     })();
   </script>
 
